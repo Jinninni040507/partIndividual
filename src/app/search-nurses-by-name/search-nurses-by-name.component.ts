@@ -16,6 +16,8 @@ export class SearchNursesByNameComponent {
       this.foundNurses = NURSE_USERS.filter((nurse) =>
         nurse.name.toLowerCase().includes(name.toLowerCase())
       );
+    } else {
+      this.foundNurses = NURSE_USERS;
     }
   }
 }
